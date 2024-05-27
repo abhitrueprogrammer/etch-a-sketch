@@ -17,8 +17,10 @@ buttonChangeCanvas.addEventListener("click", () =>{
     clearCanvas();
     createCanvas(userInput,userInput);
 })
+
 function clearCanvas(){
-    canvas.textContent=""
+    canvas.textContent="";
+    
 }
 function createCanvas(x,y) {
     const columnPercentage = 100/x;
@@ -29,7 +31,12 @@ function createCanvas(x,y) {
             pixel.style.height= `${columnPercentage}%`;
             pixel.style.flex = `1 0 ${columnPercentage}%`;
             pixel.addEventListener("mouseenter", () => {
-                pixel.classList.add("red");
+                let red, blue, green;
+                red = Math.floor(255 * Math.random());
+                blue = Math.floor(255 * Math.random());
+                green = Math.floor(255 * Math.random());
+
+                pixel.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
             });
             canvas.appendChild(pixel);
         }

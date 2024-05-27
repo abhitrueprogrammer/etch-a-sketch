@@ -10,7 +10,7 @@
 }
 .pixel {
     /* change these programmatically */
-
+    background-color: rgb(red, green, blue);
     background-color: blue;
     border-width: 0.01px;
     padding: 0px;
@@ -20,9 +20,7 @@
     flex: 1 0 calc(100%/16);
     height: calc(100%/16);
 }
-.red{
-    background-color: red;
-}
+
 /* Make the flex such that 16 rows of boxes are always in one line, their size adjusting with the help of flex */
 #canvas {
     width: 85vh;
