@@ -9,12 +9,16 @@
     
 }
 .pixel {
-    flex: 1 0 calc(100%/16);
-    height: calc(100%/16);
+    /* change these programmatically */
+
     background-color: blue;
     border-width: 0.01px;
     padding: 0px;
     margin: 0px;
+}
+.pixel-size{
+    flex: 1 0 calc(100%/16);
+    height: calc(100%/16);
 }
 .red{
     background-color: red;
@@ -34,5 +38,5 @@ body{
 .header-item{
     margin: 2rem;
 }
-#change-c-s{
+#change-canvas-size{
 }
